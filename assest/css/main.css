@@ -1,0 +1,43 @@
+.Text-color-0 {
+  color: #e6e6e6;
+}
+
+.bg-color-0 {
+  background-color: #e6e6e6;
+}
+
+.Text-color-1 {
+  color: #f0f0f0;
+}
+
+.bg-color-1 {
+  background-color: #f0f0f0;
+}
+
+.Text-color-2 {
+  color: #8abae0;
+}
+
+.bg-color-2 {
+  background-color: #8abae0;
+}
+
+.buttons .btn:hover {
+  background-color: #cacaca;
+}
+
+span:hover {
+  cursor: pointer;
+  background-color: #cacaca;
+}
+
+.calculator {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.display {
+  height: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */

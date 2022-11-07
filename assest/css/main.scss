@@ -1,0 +1,31 @@
+$colors : 'color-0' #e6e6e6 ,
+'color-1' #f0f0f0,
+'color-2' #8abae0;
+@each $name ,$value in $colors{
+    .Text-{
+        &#{$name}{
+            color:$value;
+        }
+    }
+    .bg-{
+        &#{$name}{
+            background-color:$value;
+        }
+    
+    }
+}
+.buttons .btn:hover{
+    background-color: #cacaca;
+}
+span:hover{
+    cursor: pointer;
+    background-color: #cacaca;
+
+}
+.calculator{
+    width:500px;
+    margin: 100px auto;
+}
+.display{
+    height: 100px;
+}
