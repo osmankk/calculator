@@ -8,67 +8,74 @@
     <title>Bootstrap training</title>
 
 
-    <link rel="stylesheet" href="../calculator/assest/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../calculator/assest/css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="../calculator/assest/css/all.min.css">
-    <link rel="stylesheet" href="../calculator/assest/css/main.scss">
-    <link rel="stylesheet" href="../calculator/assest/css/main.css">
+    <link rel="stylesheet" type='text/css'  href="assest/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="assest/css/bootstrap.min.css.map">
+    <link rel="stylesheet" type='text/css'  href="assest/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="assest/css/main.scss">
+    <link rel="stylesheet" type='text/css' href="assest/css/main.css">
+   
+    
 
 </head>
 
 <body>
-    <div class="calculator">
+    
         <div class="container ">
+            <div class="calculator ">
             <div class="row  bg-color-0">
                 <div class="col-3  p-3"><b>Calculator</b></div>
                 <div class="col-3   p-3"></div>
                 <div class="col-3   p-3"></div>
-                <div class="col-3 p-3 text-end"><b><span class="minus">&nbsp; &#8722;&nbsp; </span> <span> &nbsp;&#9744;&nbsp; </span>
-                        <span>&nbsp; &#9746; &nbsp; </span> </b></div>
+                <div class="col-3 p-3 text-end"><b><span class="short">&nbsp; &#8722;&nbsp; </span> <span class="max"> &nbsp;&#9744;&nbsp; </span>
+                        <span class="remove">&nbsp; &#9746; &nbsp; </span> </b></div>
             </div>
 
 
-            <div class="row bg-color-1 display">
-                <div class="w-100  p-3"></div>
-            </div>
+            <div class="row bg-color-1 display align-items-center p-3"></div>
             <div class="buttons">
                 <div class="row  bg-color-0">
-                    <div class="col-3 text-center border border-2 p-3 btn"><b> &percnt;</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>C </b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>&#8592;</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>/ </b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn " data-set = "ptg"><b>&percnt;</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn "data-set = "C" ><b>C</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn "data-set = "de1"><b>&#8592;</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn "data-set = "divide"><b>/</b></div>
                 </div>
                 <div class="row  ">
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>7</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>8</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>9</b></div>
-                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn"><b>X </b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn seven"><b>7</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn eight"><b>8</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn nine"><b>9</b></div>
+                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn multi"><b>*</b></div>
                 </div>
                 <div class="row  ">
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>4</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>5</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>6</b></div>
-                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn"><b>-</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn four"><b>4</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn five"><b>5</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn six"><b>6</b></div>
+                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn minus"><b>-</b></div>
                 </div>
                 <div class="row  ">
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>1</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>2</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>3</b></div>
-                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn"><b>+</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn one"><b>1</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn two"><b>2</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn three"><b>3</b></div>
+                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn plus"><b>+</b></div>
                 </div>
                 <div class="row  ">
-                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn"><b>+/-</b></div>
-                    <div class="col-3 text-center border border-2 p-3 btn"><b>0</b></div>
-                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn"><b>.</b></div>
-                    <div class="col-3 text-center border border-2 p-3 bg-color-2 btn"><b>=</b></div>
+                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn convert"><b>+/-</b></div>
+                    <div class="col-3 text-center border border-2 p-3 btn zero"><b>0</b></div>
+                    <div class="col-3 text-center border border-2 p-3 bg-color-0 btn decimale"><b>.</b></div>
+                    <div class="col-3 text-center border border-2 p-3 bg-color-2 btn equal"><b>=</b></div>
                 </div>
             </div>
 
         </div>
-    </div>
-    <script src="../calculator/assest/js/all.min.js"></script>
-    <script src="../calculator/assest/js/bootstrap.bundle.min.js"></script>
-    <script src="../calculator/assest/js/bootstrap.bundle.min.js.map"></script>
+    </div> 
+
+ 
+    
+    
 </body>
+<footer>
+    <script src="assest/js/all.min.js"></script>
+    <!-- <script src="assest/js/bootstrap.bundle.min.js.map"></script> -->
+    <script src="assest/js/main.js"></script>
+</footer>
 
 </html>

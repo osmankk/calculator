@@ -14,6 +14,19 @@ $colors : 'color-0' #e6e6e6 ,
     
     }
 }
+@each $name ,$value in $colors{
+    .#{$name}-{
+        .colorText{
+            color:$value;
+        }
+    }
+    .#{$name}-{
+        .bg{
+            background-color:$value;
+        }
+    
+    }
+}
 .buttons .btn:hover{
     background-color: #cacaca;
 }
@@ -27,5 +40,27 @@ span:hover{
     margin: 100px auto;
 }
 .display{
-    height: 100px;
+    font-size: 30px;
+}
+
+if (operation != '') {
+    switch (operation) {
+        case "+":
+            memory1 = memory1 + memory2;
+            break;
+        case "-":
+            memory1 = memory1 - memory2;
+            break;
+        case "/":
+            memory1 = memory1 / memory2;
+            break;
+        default:
+            memory1 = memory1 * memory2;
+            break;
+        
+    }  
+}
+else{
+    if (operation = '') 
+    memory1 = parseFloat(display.textContent);
 }
